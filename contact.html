@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	
+	
+	<style>
+	.cryptedmail:after {
+	content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+	}
+	</style>
 	<style>
 	img.two {
 	width: 40%;
@@ -89,13 +95,18 @@
 </p>
 	          </div>
 	          <div class="col-md-3">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+972-77-887-4147 </a></p>
+	            <p><span>Phone:</span><br> <a href="tel://1234567920">+972-77-887-4147 </a></p>
 	          </div>
 	          <div class="col-md-3">
-	            <p><span>Email:</span> <a href="mailto:moti.freiman@technion.ac.il">moti.freiman@technion.ac.il</a></p>
+				<p><span>Email:</span> <a href="#" class="cryptedmail"
+				     	    data-name="moti.freiman"
+							data-domain="technion"
+							data-tld="ac.il"
+							onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+				</p>
 	          </div>
 	          <div class="col-md-3">
-	            <p><span>Website</span> <a href="index.html">tcml.net.technion.ac.il</a></p>
+	            <p><span>Website</span><br> <a href="index.html">tcml.net.technion.ac.il</a></p>
 	          </div>
 	        </div>
 	        <div class="row block-9">
