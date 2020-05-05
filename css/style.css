@@ -697,7 +697,7 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   position: relative; }
   .intro-section, .intro-section .container .row {
-    height: 100vh;
+    height: 75vh;
      }
    @media (max-width: 991.98px) {
 	   .intro-section, .intro-section .container .row {
