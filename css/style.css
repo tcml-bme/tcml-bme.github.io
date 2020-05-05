@@ -698,11 +698,16 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .intro-section, .intro-section .container .row {
     height: 100vh;
-    min-height: 900px; }
+     }
+   @media (max-width: 991.98px) {
+	   .intro-section, .intro-section .container .row {
+    height: 33vh;
+     }
+   }
   .intro-section:before {
     content: "";
     position: absolute;
-    height: 100%;
+    height: auto;
     width: 100%;
     background: #222;
     opacity: .7;
@@ -712,7 +717,8 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat; }
     @media (max-width: 991.98px) {
       .intro-section:before {
-        width: 100%; } }
+        width: 100%;
+		height: auto;		} }
   .intro-section h1 {
     font-size: 7rem;
     font-weight: 900;
