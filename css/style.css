@@ -35,11 +35,13 @@ h1, h2, h3, h4, h5,
 }
 
 #intro_text {
-  font-size: 100px;
+  font-size: calc(4vw + 4vh + 3vmin);
 }
 
+
+
 #intro_text2 {
-  font-size: 65px; color: white; font-weight: bold;
+  font-size: calc(3vw + 3vh + 1vmin);; color: white; font-weight: bold;
 }
 
 #DLA {
