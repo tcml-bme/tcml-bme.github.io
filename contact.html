@@ -147,60 +147,87 @@
         <span class="current">Contact Us</span>
       </div>
     </div>
-
-    <div id="addressTech" class="col-4">
-      <div>
-        <br><br>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1677.3180139890392!2d35.026477!3d32.775391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23c7c6d311997032!2sTechnion%20Faculty%20of%20Biomedical%20Engineering!5e0!3m2!1sen!2sus!4v1587277993151!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-        <div id="map" style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1677.3180139890392!2d35.026477!3d32.775391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23c7c6d311997032!2sTechnion%20Faculty%20of%20Biomedical%20Engineering!5e0!3m2!1sen!2sus!4v1587277993151!5m2!1sen!2sus"></iframe></div>
-        <p><span>Address:</span> Faculty of Biomedical Engineering, Technion – Israel Institute of Technology, Technion City, Haifa 3200003, Israel
-        </p>
+	
+	<div class="site-section">
+        <div class="container">
+			<div class="row">
+			
+				
+					
+				
+				<div class="col-xs-8 col-md-6">
+					<div id="SendForm" class="site-section">
         
-      </div>
-      </div>
-    
-
-    
-      <div id="SendForm" class="site-section">
-        
-        <form action="https://formspree.io/xdogqgpz" method="POST">
-          <div>
-              <div class="row">
-                  <div class="col-md-6 form-group">
-                      <label for="fname">Name</label>
-                      <input type="text" id="fname" class="form-control form-control-lg" required>
-                  </div>
-                  <div class="col-md-6 form-group">
-                      <label for="lname">Organization</label>
-                      <input type="text" id="lname" class="form-control form-control-lg">
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6 form-group">
-                      <label for="eaddress">Email Address</label>
-                      <input type="text" id="eaddress" class="form-control form-control-lg" required>
-                  </div>
-                  <div class="col-md-6 form-group">
-                      <label for="tel">Tel. Number</label>
-                      <input type="text" id="tel" class="form-control form-control-lg">
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12 form-group">
-                      <label for="message">Message</label>
-                      <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                  </div>
-              </div>
+						<form action="https://formspree.io/xdogqgpz" method="POST">
+						  <div>
+							  <div class="row">
+								  <div class="col-md-6 form-group">
+									  <label for="fname">Name</label>
+									  <input type="text" id="fname" class="form-control form-control-lg" required>
+								  </div>
+								  <div class="col-md-6 form-group">
+									  <label for="lname">Organization</label>
+									  <input type="text" id="lname" class="form-control form-control-lg">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-md-6 form-group">
+									  <label for="eaddress">Email Address</label>
+									  <input type="text" id="eaddress" class="form-control form-control-lg" required>
+								  </div>
+								  <div class="col-md-6 form-group">
+									  <label for="tel">Tel. Number</label>
+									  <input type="text" id="tel" class="form-control form-control-lg">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-md-12 form-group">
+									  <label for="message">Message</label>
+									  <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+								  </div>
+							  </div>
+				  
+							  <div id="CUsubmit" class="row">
+								  <div class="col-12">
+									  <input type="submit" value="Send Message" class="btn btn-primary btn-lg px-5">
+								  </div>
+							  </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				
+				
+				<div class="col-xs-4 col-md-6" id="addressTech">
+					<br><br>
+					<div id="map" style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+						<div id="mymap-display" style="height:100%; width:100%;max-width:100%;">
+							<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1677.3180139890392!2d35.026477!3d32.775391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23c7c6d311997032!2sTechnion%20Faculty%20of%20Biomedical%20Engineering!5e0!3m2!1sen!2sus!4v1587277993151!5m2!1sen!2sus"></iframe>
+						</div>
+					</div>
+					<p>
+						<span>Address:</span> Faculty of Biomedical Engineering, Technion – Israel Institute of Technology, Technion City, Haifa 3200003, Israel
+					</p>
+				</div>
   
-              <div id="CUsubmit" class="row">
-                  <div class="col-12">
-                      <input type="submit" value="Send Message" class="btn btn-primary btn-lg px-5">
-                  </div>
-              </div>
-          </div>
-        </form>
-    </div>
+
+            
     
+			</div>
+        </div>
+    </div>
+          
+         
+
+        
+                
+          
+       
+    
+    
+
+    
+     
     
 
     <div id="Moti" class="section-bg style-1" style="background-image: url(images/Computer_Lab-1549388259.webp);">
