@@ -134,6 +134,35 @@ h1, h2, h3, h4, h5,
   margin-bottom: 0;
 }
 
+/* Completed projects */
+
+  .feature-P .icon-wrapper:before, .feature-P .icon-P:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 67.88px;
+    height: 67.88px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 14.06px; }
+  .feature-P .icon-P:before {
+    top: -33.94px; }
+  .feature-P .icon-P:after {
+    bottom: -33.94px; }
+
+.feature-P .feature-P-content, .person .feature-P-content {
+  padding: 50px 20px 20px 20px;
+  text-align: left; }
+  .feature-P -content h2, .person .feature-P-content h2 {
+    font-size: 1.3rem;
+    color: #000; }
+
+#CPtitle {
+  text-align: center;
+}
+
 /* id edits to publications page */
 
 #colorlib-main {
