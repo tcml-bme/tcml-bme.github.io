@@ -134,6 +134,40 @@ h1, h2, h3, h4, h5,
   margin-bottom: 0;
 }
 
+/* Alumni */
+
+.hero-wrap3, .img3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.hero-wrap3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0; 
+}
+.hero-wrap3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: .7;
+  background: #fff;
+  z-index: 0; }
+.hero-wrap3.hero-wrap-2 .overlay {
+  opacity: .8; }
+
+
 /* ID edits to Bayesian page */
 #smallest_icon {
   font-size: .25em;
