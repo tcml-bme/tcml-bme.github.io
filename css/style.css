@@ -831,7 +831,7 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4rem 0; }
+  padding: 2rem 0; }
   .section-bg.style-1 {
     position: relative; }
     .section-bg.style-1:before {
@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       bottom: 0;
-      background: #0d4797;
+      background: #86EDBC;
       opacity: .9;
       z-index: 0; }
     .section-bg.style-1 > .container {
@@ -1146,7 +1146,7 @@ h1, h2, h3, h4, h5,
 
 .footer {
   padding: 4rem 0;
-  background: #5998f1;
+  background: #5686da;
   font-size: 20px;
   color: #fff; }
   .footer .footer-heading {
