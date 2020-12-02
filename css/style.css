@@ -829,11 +829,11 @@ h1, h2, h3, h4, h5,
   color: #000000; }
   .section-title-underline span {
     display: inline-block;
-    border-bottom: 4px solid #86edbc; }
+    border-bottom: 4px solid #5686da; }
   .section-title-underline.style-2 {
     color: #fff; }
     .section-title-underline.style-2 span {
-      border-color: #86edbc; }
+      border-color: #5686da; }
 
 .section-bg {
   background-size: cover;
