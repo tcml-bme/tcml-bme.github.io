@@ -134,6 +134,10 @@ h1, h2, h3, h4, h5,
   margin-bottom: 0;
 }
 
+.lnk_txt_clr {
+  color: #5686da;
+}
+
 /* Alumni */
 
 .hero-wrap3, .img3 {
