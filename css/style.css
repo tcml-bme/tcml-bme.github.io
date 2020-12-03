@@ -68,6 +68,17 @@ h1, h2, h3, h4, h5,
 #pic {
   font-size: large;
 }
+
+/* color classes */
+
+.clr_db {
+	color: #216093;
+}
+
+.clr_ow {
+	color: #F2F5F8;
+}
+
 /* ID edits to contact us page */
 
 #SendForm {
