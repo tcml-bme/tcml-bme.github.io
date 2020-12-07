@@ -75,6 +75,9 @@ h1, h2, h3, h4, h5,
 }
 
 /* color classes */
+#bgclr_lg {
+	background-color: #86edbc;
+}
 
 #clr_dark {
 	background-color: #216093;
