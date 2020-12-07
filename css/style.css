@@ -1156,7 +1156,7 @@ h1, h2, h3, h4, h5,
   .course-1-item figure {
     position: relative; }
   .course-1-item .category {
-    background: #777b80;
+    background: #5686da;
     padding: 20px; }
     .course-1-item .category h3 {
       color: #fff;
@@ -1170,7 +1170,7 @@ h1, h2, h3, h4, h5,
     -ms-transform: translatey(-100%);
     transform: translatey(-100%);
     padding: 10px 20px;
-    background: #5686da;
+    background: #777b80;
     color: #fff; }
   .course-1-item .course-1-content {
     padding: 20px 40px;
