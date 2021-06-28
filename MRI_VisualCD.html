@@ -173,25 +173,25 @@
             <p>Yael Zaffrani, Anat Grinfeld, Anat Ilivitzki, and Moti Freiman </p>
 
 <h2 class="text-justify">
-    <small>Abstract </small>  
+    <small>Background </small>  
 </h2>
             <p class="text-justify"> 
-                Mucosal healing is considered a major Crohn's Disease (CD) treatment goal. 
-                Simple Endoscopic Score of Crohn's Disease (SES-CD) assessed by ileocolonoscopy is a standard quantitative endoscopic score for mucosal healing. 
-                The most frequent disease location is the terminal ileum (TI); however the TI is narrow and intubation failure is common, occurring in 20-25% of pediatric CD ileocolonoscopies. 
-                Our aim is to assess the added value of machine-learning models in imputing TI SES-CD from Magnetic Resonance Enterography (MRE) data.
+               Crohn’s disease is a chronic inflammatory bowel disease (IBD) which often presents with discontinuous transmural inflammation of the distal ileum and proximal colon. 
+              Individuals with this disease often suffer from diarrhea, abdominal pain, fever, and/or weight loss.
+Currently most individuals are diagnosed using ileocolonoscopy, which is an invasive procedure. 
+              Magnetic resonance enterography (MRE) is a non-invasive procedure that has the ability to become the standard diagnostic tool for Crohn’s disease.
+              A challenge of using an MRE for diagnosis is it requires scrolling back and forth to understand the anatomy of the bowel from 2D images making it difficult to fully appreciate the disease extent.
             </p>
             <h2 class="text-justify">
                 <small>Materials and Methods </small>  
             </h2>
             <p class="text-justify">
-                This is a substudy of the ImageKids study in which 240 pediatric patients with CD (22 centers, age 14.2 ± 2.5 years) underwent a baseline ileocolonoscopy scored by SES-CD, followed by an MRE examination within 14 days. 
-                We used a non-linear machine-learning random-forest (RF) model and a multiple linear regression model (MLR) with two sets (in total we produced 4 models) of biomarkers as input: Magnetic Resonance Index of Activity (MaRIA) biomarkers (wall thickness, ulcers, edema, relative contrast enhancement (RCE)) and the Pediatric Inflammatory Crohn's MRE Index (PICMI) biomarkers (wall thickness, diffusion weighted imaging, ulcers, edema, comb sign) -  the latter without gadolinium-based contrast injection or post-contrast T1-weighted sequences. 
-                We assessed the added-value of machine-learning models in imputing SES-CD values by comparing RF-MaRIA vs. MLR-MaRIA, and for RF-PICMI vs. MLR-PICMI. 
-                We determined which set of biomarkers (PICMI vs. MaRIA) provides more accurate predictions. 
-                The mean squared error (MSE) from the reference endoscopic SES-CD was used as the measure of accuracy.
-                Statistical analysis was performed with the Wilcoxon non-parametric test in order to determine whether the median of validation MSE differed between two given models.
-               <!-- <div class="mx-auto d-block"><img src="images/Bayesian1.png" class="img-fluid" alt="Bayesian Diagram"> </div>-->
+                The goal of this project was to design and implement an open-source based software tool that would enable the presentation of the MR data in MPR views, 
+              thus providing a better description of the disease. 
+              These improvements have the potential to lead to better assessments of medical therapies and decision-making for surgical treatments.
+Using software programming in python we created open source software to provide a depiction of the disease state on a single image. 
+              This enables the visualization of extraction of Crohn’s disease quantitative imaging markers.
+               <div class="mx-auto d-block"><img src="images/Project1.png" class="img-fluid" alt="MPR Diagram"> </div>
             </p>
             <h2 class="text-justify">
                 <small>Conclusion</small>  
