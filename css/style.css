@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5,
   font-size: calc(3vw + 3vh + 1vmin);; color: white; font-weight: bold; text-shadow: 2px 2px 5px #b4b4b4;
 }
 
-#ExcitingNews {
+.ExcitingNews {
   background-color: gray;
 }
 
