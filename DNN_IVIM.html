@@ -194,7 +194,7 @@
                 The IVIM parameters were chosen as uniformly distributed random variables over the following intervals: 0.0005 &le; D &le; 0.002 mm 2/sec, 0.01 &le; Dp &le; 0.1 mm 2/sec, 0.1 &le; Fp &le; 0.4. These parameters values were chosen in agreement with reported abdominal DW-MRI data [2]. 
                 During the training process, uniformly distributed random variations in the b-values vectors were injected to the network. 
                 Rician noise was added to the IVIM signals during the training process.
-               <div class="mx-auto d-block"><img src="images/DNN_IVIM.png" class="img-fluid" alt="Method Architecture"> </div>
+               <div class="mx-auto d-block"><img src="images/DNN_IVIM_fc.png" class="img-fluid" alt="Method Architecture"> </div>
             </p>
             <h2 class="text-justify">
                 <small>Conclusion</small>  
@@ -204,7 +204,7 @@
                 In a major shift from previous work, which focused on accurate prediction of the IVIM model parameters in a specific setting (i.e., a set of b values), our approach is capable to "learn" the IVIM model and as a result, be agnostic to variations in the acquisition protocols. 
                 Thus, the proposed DNN-based model of the IVIM signal-decay model may be used to estimate the IVIM model parameters from DW-MRI data, without requiring an additional training session according to the specific acquisition protocol parameters. 
                 The proposed approach can be extended directly to additional parametric MRI quantitative mappings.
-                <div class="mx-auto d-block"><img src="images/methods.jpg" class="img-fluid" alt="Method comparisons"></div>
+               <!-- <div class="mx-auto d-block"><img src="images/methods.jpg" class="img-fluid" alt="Method comparisons"></div> -->
             </p>
             <br>
           <video width="320" height="240" controls>
