@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <script>
-function foo() {
+function maria() {
    model = $('.nav-tabs .active').text()
    alert(model)
-   if (model == "MaRIA"){
-      WT = document.getElementById('WT').value
-      RCE = document.getElementById('RCE').value
-      ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
-      mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
-      alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema+"\n predicted terminal ileum SES-CD = "+String(1.5*WT+0.02*RCE+5*mural_edema +10*ulcers));
-   }
-   else{
-      alert("on work")
-   }
+   WT = document.getElementById('WT').value
+   RCE = document.getElementById('RCE').value
+   ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
+   mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
+   alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema+"\n predicted terminal ileum SES-CD = "+String(1.5*WT+0.02*RCE+5*mural_edema +10*ulcers));
+   return true;
+}
+function picmi() {
+   model = $('.nav-tabs .active').text()
+   alert(model)
+   return true;
+}
+function clinico() {
+   model = $('.nav-tabs .active').text()
+   alert(model)
    return true;
 }
 </script>
@@ -220,7 +225,7 @@ function foo() {
                             <br>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5" onclick="return foo();"> 
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5" onclick="return maria();"> 
                                     <small> button will be activated when webpage is complete
                                     </small> 
                                 </div>
@@ -306,7 +311,7 @@ function foo() {
                             <br>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5"> 
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5" onclick="return picmi();"> 
                                 </div>
                                 <small> button will be activated when webpage is complete
                                 </small>
@@ -374,7 +379,7 @@ function foo() {
                             <br>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5"> 
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5" onclick="return clinico();"> 
                                 </div>
                                 <small> button will be activated when webpage is complete
                                 </small>
