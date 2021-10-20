@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<script>
+function foo() {
+   alert("Submit button clicked!");
+   return true;
+}
+</script>
 <html lang="en">
 
   <head>
@@ -203,7 +209,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5">
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg px-5" onclick="return foo();"> 
                                     <small> button will be activated when webpage is complete
                                     </small> 
                                 </div>
