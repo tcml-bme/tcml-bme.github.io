@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <script>
 function foo() {
-   WT = document.getElementById('WT').value
-   RCE = document.getElementById('RCE').value
-   ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
-   mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
-   alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema+"\n predicted terminal ileum SES-CD = "+String(1.5*WT+0.02*RCE+5*mural_edema +10*ulcers));
+   model = $('.nav-tabs .active').text()
+   alert(model)
+   if (model == "MaRIA"){
+      WT = document.getElementById('WT').value
+      RCE = document.getElementById('RCE').value
+      ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
+      mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
+      alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema+"\n predicted terminal ileum SES-CD = "+String(1.5*WT+0.02*RCE+5*mural_edema +10*ulcers));
+   }
+   else{
+      alert("on work")
+   }
    return true;
 }
 </script>
