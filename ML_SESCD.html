@@ -2,8 +2,11 @@
 <script>
 function foo() {
    alert("Submit button clicked!");
-   form_text = document.getElementsById('nav-home')[0].value
-   alert(form_text);
+   WT = document.getElementById('WT').value
+   RCE = document.getElementById('RCE').value
+   ulcers = document.querySelector('input[name="ulcer"]:checked').value
+   mural_edema = document.querySelector('input[name="Muraledema"]:checked').value
+   alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema);
    return true;
 }
 </script>
