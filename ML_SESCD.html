@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <script>
 function foo() {
-   alert("Submit button clicked!");
    WT = document.getElementById('WT').value
    RCE = document.getElementById('RCE').value
-   ulcers = document.querySelector('input[name="ulcer"]:checked').value
-   mural_edema = document.querySelector('input[name="Muraledema"]:checked').value
-   alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema);
+   ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
+   mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
+   alert("WT:"+WT+"\n RCE:"+RCE+"\n ulcers:"+ulcers+"\n mural edema:"+mural_edema+"\n precited TI SES-CD = "+String(1.5*WT+0.02*RCE+5*mural_edema +10*ulcers);
    return true;
 }
 </script>
@@ -180,13 +179,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="ulcer" id="ulcer1" value="option1" checked>
                                         <label class="form-check-label" for="ulcer1">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="ulcer" id="ulcer0" value="option2">
                                         <label class="form-check-label" for="ulcer0">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                     <!--<input type="text" id="ulcer" class="form-control form-control-lg">-->
@@ -196,13 +195,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="Muraledema" id="Muraledema1" value="option1" checked>
                                         <label class="form-check-label" for="Muraledema1">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="Muraledema" id="Muraledema0" value="option2">
                                         <label class="form-check-label" for="Muraledema0">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                       </div>
@@ -241,13 +240,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="ulcer" id="ulcer1" value="option1" checked>
                                         <label class="form-check-label" for="ulcer1">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="ulcer" id="ulcer0" value="option2">
                                         <label class="form-check-label" for="ulcer0">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                     <!--<input type="text" id="ulcer" class="form-control form-control-lg">-->
@@ -257,13 +256,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="Medema" id="Medema1" value="option1" checked>
                                         <label class="form-check-label" for="Medema1">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="Medema" id="Medema0" value="option2">
                                         <label class="form-check-label" for="Medema0">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                 </div>
@@ -272,13 +271,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="DWI" id="DWI0" value="option1" checked>
                                         <label class="form-check-label" for="DWI0">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="DWI" id="DWI1" value="option2">
                                         <label class="form-check-label" for="DWI1">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                 </div>
@@ -287,13 +286,13 @@ function foo() {
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="CS" id="CS1" value="option1" checked>
                                         <label class="form-check-label" for="CS1">
-                                          Yes
+                                          No
                                         </label>
                                       </div>
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="CS" id="CS0" value="option2">
                                         <label class="form-check-label" for="CS0">
-                                          No
+                                          Yes
                                         </label>
                                       </div>
                                 </div>
