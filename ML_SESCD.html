@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <script>
 function foo() {
-   alert("Submit button clicked!");
+   alert("Submit button clicked!"+document.getElementsByName('nav-profile')[0].value);
    form_text = document.getElementsByName('nav-profile')[0].value
    alert(form_text);
    return true;
