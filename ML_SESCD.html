@@ -5,7 +5,7 @@ function maria() {
    RCE = document.getElementById('RCE').value
    ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
    mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
-   alert(String(-1.5+0.27*WT+0.002*RCE+3.25*mural_edema +2*ulcers));
+   alert(parseInt(String(-1.5+0.27*WT+0.002*RCE+3.25*mural_edema +2*ulcers)));
    return true;
 }
 function picmi() {
