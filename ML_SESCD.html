@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <script>
 function maria() {
-   WT = document.getElementById('WT').value
-   RCE = document.getElementById('RCE').value
+   WT = parseFloat(document.getElementById('WT').value)
+   RCE = parseFloat(document.getElementById('RCE').value)
    ulcers = parseInt(document.querySelector('input[name="ulcer"]:checked').value.substr(- 1)) - 1
    mural_edema = parseInt(document.querySelector('input[name="Muraledema"]:checked').value.substr(- 1)) - 1
    alert(parseInt(String(-1.5+0.27*WT+0.002*RCE+3.25*mural_edema +2*ulcers)));
@@ -182,7 +182,7 @@ function clinico() {
                             <form>
                                 <div class="col-md-12 form-group row">
                                     <label for="wall thickness" >Wall Thickness (mm):</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="WT" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <label for="ulcers">Ulcers:</label>
@@ -217,7 +217,7 @@ function clinico() {
                                       </div>
                                       <div class="col-md-12 form-group row">
                                         <label for="wall thickness" >RCE:</label>
-                                        <input type="number" id="RCE" placeholder="unbound number" class="form-control form-control-md">
+                                        <input type="string" id="RCE" placeholder="unbound number" class="form-control form-control-md">
                                     </div>
 
                             <br>
@@ -242,7 +242,7 @@ function clinico() {
                               <form>
                                 <div class="col-md-12 form-group row">
                                     <label for="wall thickness" >Wall Thickness (mm):</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="WT" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <label for="ulcers">Ulcers:</label>
@@ -327,19 +327,19 @@ function clinico() {
                               <form>
                                 <div class="col-md-12 form-group row">
                                     <label for="TI_length" >terminal ileum infected length:</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="TI_length" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group row">
                                     <label for="total_length" >total infected length:</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="total_length" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group row">
                                     <label for="CRP" >C-reactive protein (CRP) level :</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="CRP" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group row">
                                     <label for="FC" >Fecal Calprotectin (FC) level :</label>
-                                    <input type="number" id="WT" placeholder="positive number" class="form-control form-control-md">
+                                    <input type="string" id="FC" placeholder="positive number" class="form-control form-control-md">
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <label for="ulcers">Ulcers:</label>
