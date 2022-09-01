@@ -1,9 +1,38 @@
 /* Base */
 body {
+  
   line-height: 1.7;
   color: gray;
   font-weight: 300;
   font-size: 1.1rem; }
+
+.carousel-container{
+  padding-top: 200px;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  color: #000;
+  font-size: medium;
+  } 
+
+
+  .carousel-main-caption {
+    font-size: x-large;
+    } 
+  @media screen and (min-width: 500px)
+{
+  .carousel-container {
+        width:60%;
+        margin:0 auto;
+    }
+
+    .carousel-main-caption {
+      font-size: xx-large;
+      } 
+}
 
 ::-moz-selection {
   background: #000;

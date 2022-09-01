@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -44,26 +46,9 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
-    <div class="py-2 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-9 d-none d-lg-block">
-            <!-- <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Have a questions?</a> 
-            <a href="#" class="small mr-3"><span class="icon-phone2 mr-2"></span> 10 20 123 456</a> 
-            <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a> 
-          </div>
-          <div class="col-lg-3 text-right">
-            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
-            <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
-             -->
-          </div>
-        </div>
-      </div>
-    </div>
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-      <div class="container">
+      <div class="navbar navbar-fixed-top m-auto justify-content-center">
         <div class="d-flex align-items-center">
           <div class="site-logo">
             <a href="index.html" class="d-block">
@@ -143,262 +128,123 @@
 
     </header>
 
-    
-    <div class="hero-slide owl-carousel site-blocks-cover">
-      <div class="intro-section" style="background-image: url('images/TechnionMRI1.jpg'); background-size:100% auto;">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              <h3 id="intro_text2"><small>Welcome to the</small> <br> Technion Computational MRI Lab</h3>
+    <div class="carousel-container mx-auto">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="images/TechnionMRI1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption carousel-main-caption">
+              <small>Welcome to the</small> <br> Technion Computational MRI Lab
             </div>
           </div>
-        </div>
-      </div>
-      
-             <div class="intro-section" style="background-image: url('images/MRIdeliver.jpg'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Coming in the fall of 2022: : A new Human MRI Research Center will be opening at the main Technion campus (Neve-Shaanan).
-The center will offer a unique research-dedicated 3T Siemens Prisma MRI system with novel capabilities, providing increased access to high-speed structural and functional imaging used to conduct multiple research projects in our lab. 
-              <a href="https://www.thhcf.co.il/Coming-Soon-MRI-Research-Center-will-be-opening-this-coming-fall-2022">see here</a>.</h6>
-            </div>
+
+
+
+          <div class="carousel-item">
+            <img src="images/MRIdeliver.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              Coming in the fall of 2022: : A new Human MRI Research Center will be opening at the main Technion campus (Neve-Shaanan).
+                The center will offer a unique research-dedicated 3T Siemens Prisma MRI system with novel capabilities, providing increased access to high-speed structural and functional imaging used to conduct multiple research projects in our lab. 
+                              <a href="https://www.thhcf.co.il/Coming-Soon-MRI-Research-Center-will-be-opening-this-coming-fall-2022">see here</a>.
             </div>
           </div>
-        </div>
-      </div>
-      
-        <div class="intro-section" style="background-image: url('images/MiccaiNoam.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>June 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Noam Korngut</a> had her paper  
-              <q>SUPER-IVIM-DC: Intra-voxel incoherent motion based Fetal lung maturity assessment from limited DWI data using supervised learning coupled with data-consistency</q>
-              accepted to the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), to be held Sept 18-22 in Singapore.
-              <a href="http://www.miccai.org/events/calendar/show/2022-09-18/2022-09-22">See here</a>.</h6>
-            </div>
+
+
+
+          <div class="carousel-item">
+            <img src="images/MiccaiNoam.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              June 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Noam Korngut</a> had her paper  
+                <p>SUPER-IVIM-DC: Intra-voxel incoherent motion based Fetal lung maturity assessment from limited DWI data using supervised learning coupled with data-consistency</p>
+                accepted to the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), to be held Sept 18-22 in Singapore.
+                <a href="http://www.miccai.org/events/calendar/show/2022-09-18/2022-09-22">See here</a>.
+
             </div>
           </div>
-        </div>
-      </div>       
-      
-              <div class="intro-section" style="background-image: url('images/MiccaiMaya.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>June 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Maya Gilad</a> had her paper  
+
+
+
+          <div class="carousel-item">
+            <img src="images/MiccaiMaya.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              June 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Maya Gilad</a> had her paper  
               <q>PD-DWI: Predicting response to neoadjuvant chemotherapy in invasive breast cancer with Physiologically-Decomposed Diffusion-Weighted MRI machine-learning model</q>
                <a href="https://arxiv.org/abs/2206.05695"><i class="ai ai-arxiv">
                accepted to the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), to be held Sept 18-22 in Singapore.
-              <a href="http://www.miccai.org/events/calendar/show/2022-09-18/2022-09-22">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>    
-                                                                                                                     
-       <div class="intro-section" style="background-image: url('images/Samah_Journal.jpg'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>June 1, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a> had her paper  
-              <q>NPBDREG: Uncertainty Assessment in Diffeomorphic Brain MRI Registration using a Non-parametric Bayesian Deep-Learning Based Approach</q>
-              accepted to the Journal of Computerized Medical Imaging and Graphics.
-              <a href="https://arxiv.org/abs/2108.06771/">see here</a>.</h6>
-            </div>
+              <a href="http://www.miccai.org/events/calendar/show/2022-09-18/2022-09-22">See here</a>.
+
             </div>
           </div>
-        </div>
-      </div>
-      
-       <div class="intro-section" style="background-image: url('images/ECCVws.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>March 30, 2022:We are organizing the Medical computer vision workshop at the upcoming <a href="https://eccv2022.ecva.net/">ECCV 2022</a> in Tel Aviv, Israel. 
-                                To learn more about the workshop and our call for papers please
-              <a href="https://eccv-mcv.github.io/">see here</a>.</h6>
-            </div>
+
+
+          <div class="carousel-item">
+            <img src="images/Samah_Journal.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              June 1, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a> had her paper  
+                <q>NPBDREG: Uncertainty Assessment in Diffeomorphic Brain MRI Registration using a Non-parametric Bayesian Deep-Learning Based Approach</q>
+                accepted to the Journal of Computerized Medical Imaging and Graphics.
+                <a href="https://arxiv.org/abs/2108.06771/">see here</a>.
             </div>
           </div>
-        </div>
-      </div>
-      
-      <div class="intro-section" style="background-image: url('images/EladISMRM.jpg'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Feb 4, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Elad Rotman</a> had his abstract  
-              <q>SUPER-IVIM-DC,  A supervised deep-learning with data consistency approach for IVIM model parameter estimation from Diffusion-Weighted MRI data</q>
-              accepted to the upcoming Joint Annual Meeting ISMRM-ESMRMB & ISMRT 31st Annual Meeting to be held May 07-12, 2022 in London, England, UK.
-              <a href="https://www.ismrm.org/22m/">See here</a>.</h6>
-            </div>
+
+
+          <div class="carousel-item">
+            <img src="images/ECCVws.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              March 30, 2022:We are organizing the Medical computer vision workshop at the upcoming <a href="https://eccv2022.ecva.net/">ECCV 2022</a> in Tel Aviv, Israel. 
+                To learn more about the workshop and our call for papers please
+<a href="https://mcv-workshop.github.io/">see here</a>.
             </div>
           </div>
-        </div>
-      </div>
-                                                           
-           <div class="intro-section" style="background-image: url('images/IEEE_2022.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Jan 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Yan Ziselman</a> had his paper  
-              <q>Gadolinium-free Crohn's disease assessment from Magnetic Resonance Enterography data</q>
-              accepted to the IEEE International Symposium on Biomedical Imaging (ISBI) 2022 Conference, to be held March 28.
-              <a href="https://biomedicalimaging.org/2022/">See here</a>.</h6>
-            </div>
+
+
+          <div class="carousel-item">
+            <img src="images/EladISMRM.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              Feb 4, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Elad Rotman</a> had his abstract  
+                <q>SUPER-IVIM-DC,  A supervised deep-learning with data consistency approach for IVIM model parameter estimation from Diffusion-Weighted MRI data</q>
+                accepted to the upcoming Joint Annual Meeting ISMRM-ESMRMB & ISMRT 31st Annual Meeting to be held May 07-12, 2022 in London, England, UK.
+                <a href="https://www.ismrm.org/22m/">See here</a>.
             </div>
           </div>
-        </div>
-      </div>
-                                                           
-       <div class="intro-section" style="background-image: url('images/Travel_Samah.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Jan 12, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a> was awarded the <a href="https://www.bsf.org.il/funding-opportunities/the-prof-rahamimoff-travel-grants-for-young-scientists/about/">
+
+
+
+          <div class="carousel-item">
+            <img src="images/IEEE_2022.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              Jan 7, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Yan Ziselman</a> had his paper  
+                <q>Gadolinium-free Crohn's disease assessment from Magnetic Resonance Enterography data</q>
+                accepted to the IEEE International Symposium on Biomedical Imaging (ISBI) 2022 Conference, to be held March 28.
+                <a href="https://biomedicalimaging.org/2022/">See here</a>.
+              </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="images/Travel_Samah.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              Jan 12, 2022: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a> was awarded the <a href="https://www.bsf.org.il/funding-opportunities/the-prof-rahamimoff-travel-grants-for-young-scientists/about/">
                 Prof. Rahamimoff Travel Grant for Young Scientists</a>, through the U.S.-Israel Binational Science Foundation (BSF). This grant will enable Samah to collaborate with Prof. Simon's 
-                <ahref="http://crl.med.harvard.edu/">Computational Radiology Laboratory at Boston Children’s Hospital (CRL)</a>.
-              </h6>
-            </div>
-            </div>
+                <a href="http://crl.med.harvard.edu/">Computational Radiology Laboratory at Boston Children’s Hospital (CRL)</a>.
+              </div>
           </div>
-        </div>
-      </div>
-                                                           
-            <div class="intro-section" style="background-image: url('images/Shira_neurips.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Nov 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Shira Rotman</a> had her abstract  
-              <q>MELoDee – Multi-Exponential model Learning based on Deep Neural Networks for Quantitative MRI Bio-Markers Estimation</q>
-              accepted to the Medical Imaging Meetis NeurIPS Workshop 2021(Med-Neurips), to be held Dec 14 online.
-              <a href="https://sites.google.com/view/med-neurips-2021/schedule">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="intro-section" style="background-image: url('images/IEEE_award.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Nov 2021: Congratulations! Dar Arava anf Mohammad Masarwy  (from the faculty of Electrical Engineering), supervised by <a href="https://tcml-bme.github.io/people">Samah Khawaled</a>, had their paper  
-              <q>Deep-Learning based Motion Correction for Myocardial T1 Mapping</q>
-              awarded the Europeon Microwave Association (EuMA) Student Paper Award at the International Conference On Microwave, Communications, Anthenas and Electronic Systems (IEEE COMCAS), to be held Nov 1-3 in Tel Aviv, Israel. <a href="https://www.comcas.org/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      
-      <div class="intro-section" style="background-image: url('images/IMVC_2021_SR.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Sept. 5, 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Shira Rotman</a> had her paper  
-              <q>MELoDee – Multi-Exponential model Learning based on Deep Neural Networks for Quantitative MRI Bio-Markers Estimation</q>
-              accepted to the Israel MAchine Vision Confernece (IMVC) 2021 and will be a part of the Healthcare track, to be held Oct 26 in Tel Aviv, Israel.
-              <a href="https://imvc.co.il/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      
-      <div class="intro-section" style="background-image: url('images/IMVC_2021_SK.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>Sept. 5, 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a> had her paper  
-              <q>Non-Parametric Bayesian Deep-learning Method for Brain MRI Registration</q>
-              accepted to the Israel MAchine Vision Confernece (IMVC) 2021 and will be a part of the Healthcare track, to be held Oct 26 in Tel Aviv, Israel.
-              <a href="https://imvc.co.il/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="intro-section" style="background-image: url('images/IEEE2021.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>July 19, 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Samah Khawaled</a>, in collaboration with Dar Arava anf Mohammad Masarwy, had her paper  
-              <q>Deep-Learning based Motion Correction for Myocardial T1 Mapping</q>
-              accepted to the International Conference On Microwave, Communications, Anthenas and Electronic Systems (IEEE COMCAS), to be held Nov 1-3 in Tel Aviv, Israel. <a href="https://www.comcas.org/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-       <div class="intro-section" style="background-image: url('images/IEEE2021_2.png'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>July 19, 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Hadas Ben-Atya and Ori Rajchert</a> had their paper  
-              <q>Non-Parametric Data Augmentations Improve Deep-Learning based Brain Tumor Segmentation</q>
-              accepted to the International Conference On Microwave, Communications, Anthenas and Electronic Systems (IEEE COMCAS), to be held Nov 1-3 in Tel Aviv, Israel. <a href="https://www.comcas.org/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-       <div class="intro-section" style="background-image: url('images/RSNA_2021.jpg'); background-size:contain auto;"">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="carousel-caption" data-aos="fade-up">
-             <div class="ExcitingNews">
-              <h6>July 19, 2021: Congratulations! <a href="https://tcml-bme.github.io/people">Itai Guez</a> had his abstract  
-              <q>Development of a machine-learning models based on Magnetic Resonance Enterography (MRE) improves the assessment of mucosal healing in pediatric Crohn's disease (pCD)</q>
-              accepted to the 107th Scientific Assembly and Annual Meeting of the Radiological Society of North America (RSNA), to be held Nov 28 - Dec 2 in Chicago, Illinois. <a href="https://www.rsna.org/annual-meeting/">See here</a>.</h6>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-     <!-- 
-      <div class="intro-section" style="background-image: url('images/3drs.jpg'); background-size:contain auto;">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              <h2 id="intro_text2">Improving Patient Care </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="intro-section" style="background-image: url('images/3drs.jpg'); background-size:contain auto;">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              <h2 id="intro_text2">Developing Novel Deep-Learning-Based Methods for MRI Acquisition and Analysis</h2>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
     </div>
     
+
+
 
     <div class="site-section">
       <div class="container">
@@ -427,110 +273,8 @@ The center will offer a unique research-dedicated 3T Siemens Prisma MRI system w
     </div>
 
 
-
-
-    <!-- // 05 - Block -->
-  <!-- <div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4">
-            <h2 class="section-title-underline">
-              <span>Testimonials</span>
-            </h2>
-          </div>
-        </div>
-
-
-        <div class="owl-slide owl-carousel">
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-            </div>
-          </div>
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-            </div>
-          </div>
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="ftco-testimonial-1">
-            <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid mr-3">
-              <div>
-                <h3>Allison Holmes</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-            </div>
-          </div>
-
-        </div>
-        
-      </div>
-    </div> -->
-    
-
     <div class="section-bg style-1" style="background-image: url('images/about_1.jpg');">
       <div class="container">
-        <!-- <div class="row mb-5 justify-content-center text-center">
-        </div> -->
       </div>
     </div>
     
@@ -585,107 +329,6 @@ The center will offer a unique research-dedicated 3T Siemens Prisma MRI system w
         </div>
       </div>
     </div>
-    <!-- <div class="news-updates">
-      <div class="container">
-         
-        <div class="row">
-          <div class="col-lg-9">
-             <div class="section-heading">
-              <h2 class="text-black">News &amp; Updates</h2>
-              <a href="#">Read All News</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="post-entry-big">
-                  <a href="news-single.html" class="img-link"><img src="images/blog_large_1.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-content">
-                    <div class="post-meta"> 
-                      <a href="#">June 6, 2019</a>
-                      <span class="mx-1">/</span>
-                      <a href="#">Admission</a>, <a href="#">Updates</a>
-                    </div>
-                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="post-entry-big horizontal d-flex mb-4">
-                  <a href="news-single.html" class="img-link mr-4"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-content">
-                    <div class="post-meta">
-                      <a href="#">June 6, 2019</a>
-                      <span class="mx-1">/</span>
-                      <a href="#">Admission</a>, <a href="#">Updates</a>
-                    </div>
-                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
-                  </div>
-                </div>
-
-                <div class="post-entry-big horizontal d-flex mb-4">
-                  <a href="news-single.html" class="img-link mr-4"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-content">
-                    <div class="post-meta">
-                      <a href="#">June 6, 2019</a>
-                      <span class="mx-1">/</span>
-                      <a href="#">Admission</a>, <a href="#">Updates</a>
-                    </div>
-                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
-                  </div>
-                </div>
-
-                <div class="post-entry-big horizontal d-flex mb-4">
-                  <a href="news-single.html" class="img-link mr-4"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-content">
-                    <div class="post-meta">
-                      <a href="#">June 6, 2019</a>
-                      <span class="mx-1">/</span>
-                      <a href="#">Admission</a>, <a href="#">Updates</a>
-                    </div>
-                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="section-heading">
-              <h2 class="text-black">Campus Videos</h2>
-              <a href="#">View All Videos</a>
-            </div>
-            <a href="https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
-              <span class="play">
-                <span class="icon-play"></span>
-              </span>
-              <img src="images/course_5.jpg" alt="Image" class="img-fluid">
-            </a>
-            <a href="https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
-                <span class="play">
-                  <span class="icon-play"></span>
-                </span>
-                <img src="images/course_5.jpg" alt="Image" class="img-fluid">
-              </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="site-section ftco-subscribe-1" style="background-image: url('images/bg_1.jpg')">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h2>Subscribe to us!</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</p>
-          </div>
-          <div class="col-lg-5">
-            <form action="" class="d-flex">
-              <input type="text" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
-              <button class="btn btn-primary rounded py-3 px-4" type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>  -->
-
 
     <div class="footer">
       <div class="container">
@@ -772,6 +415,10 @@ The center will offer a unique research-dedicated 3T Siemens Prisma MRI system w
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
