@@ -10,6 +10,9 @@ function httpGetAsync(theUrl) {
 }
 
 function send_v1_request() {
+    document.getElementById("result_output").innerHTML = "Requesting...";
+    document.getElementById("result_loader").style.display = "block";
+
     ti_length = parseFloat(document.getElementById('TI_length').value)
     total_length = parseFloat(document.getElementById('total_length').value)
     crp_level = parseFloat(document.getElementById('CRP').value)
@@ -17,7 +20,7 @@ function send_v1_request() {
 
     input_data = {'ti_length': ti_length, 'total_length': total_length, 'crp_level': crp_level, 'fc_level': fc_level};
 
-    fetch("https://tcml-scales-website.herokuapp.com/v1/calculate", {
+    fetch("https://tcml-sescd.azurewebsites.net/api/sescd-api", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(input_data)
@@ -26,6 +29,8 @@ function send_v1_request() {
         .then(res => {
             console.log(res);
             document.getElementById("result_output").innerHTML = res;
+            document.getElementById("result_loader").style.display = "none";
+
         });
 
 }
