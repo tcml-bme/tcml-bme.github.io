@@ -1,0 +1,61 @@
+- institution: Computational Radiology Laboratory of Harvard University at Boston Children’s Hospital
+  website: http://crl.med.harvard.edu/
+  image: harvard_boston.png
+  topic: 
+    - title: Assessment of fetal lung functional maturation with Diffusion-Weighted MRI
+      collaborators:
+        - name: Prof. Simon Warfield
+          website: http://crl.med.harvard.edu/labmembers/simonwarfield/
+        - name: Dr. Onur Afacan
+          website: http://crl.med.harvard.edu/labmembers/onurafacan/
+
+- institution: Department of Radiology at Rambam Health Care Campus
+  website: https://www.rambam.org.il/en/departmentsandclinics/medical-imaging-division/
+  image: rambam-logo-25.png
+  topic: 
+    - title: A platform for Artificial Intelligence based dynamic analysis of PET-CT with applications in oncology
+      collaborators:
+        - name: Dr. Anat Ilivitzki
+          website: https://www.rambam.org.il/en/?catid=%7Bd0587c4f-cd3e-4ce1-9ed3-447ab6647d78%7D&itemid=%7Bc44dee09-d28e-4a9a-a6ef-0d83906caa99%7D
+    - title: Diagnosis and Monitoring of Crohn’s Disease activity in Contrast-Enhanced Ultrasound (CEUS) of the bowel, using flow-radiomics machine learning models
+      collaborators:
+        - name: Dr. Anat Ilivitzki
+          website: https://www.rambam.org.il/en/?catid=%7Bd0587c4f-cd3e-4ce1-9ed3-447ab6647d78%7D&itemid=%7Bc44dee09-d28e-4a9a-a6ef-0d83906caa99%7D
+
+- institution: Department of Pediatrics at Rambam Health Care Campus
+  website: https://www.rambam.org.il/en/?catid=%7B425ab187-307a-4480-908e-c3c71513fc28%7D
+  image: rambam-logo-25.png
+  topic: 
+    - title: "Advancing Diabetes Research: A Novel Approach Utilizing Deep Learning Enhanced Multi-Compartment Quantitative MRI for Precise Pancreatic Tissue Analysis"
+      collaborators:
+        - name: Prof. Ram Weiss
+          website: https://www.rambam.org.il/en/?catid=%7B2401e4ad-b260-4af6-a018-ca187d14c9ed%7D&itemid=%7B8f3f76ef-4f44-43b9-aa23-d69a3d9c5494%7D
+
+- institution: Department of Radiology at Hillel-Yaffe Medical Center
+  website: https://hymc.org.il/
+  image: hillel_yaffe_english.png
+  topic: 
+    - title: Physically-primed Deep-neural-networks for placental functional assessment in large for gestational age pregnancies with accelerated Diffusion-Weighted MRI
+      collaborators:
+        - name: Prof. Rinat Gabbai-Benziv
+          website: https://hymc.org.il/eng/?CategoryID=218&Article
+
+- institution: Shaare Zedek Medical Center
+  website: https://www.szmc.org.il/eng
+  image: shaare_zedek.png
+  topic: 
+    - title: "Combining Multi-Tier Administrative Data for Facilitating Disease-Free Management: from Low Hanging Fruits to Deep and Integrative Analyses"
+      collaborators:
+        - name: Prof. Dan Turner
+        - website: https://www.szmc.org.il/en/departments/wilf-childrens-hospital/institute-of-paediatric-gastroenterology-and-nutrition/
+
+- institution: Temerty Centre for Artificial Intelligence Research and Education in Medicine (T-CAIREM) at the University of Toronto
+  website: https://tcairem.utoronto.ca/
+  image: tcairem_utoronto.png
+  topic: 
+    - title: AI-assisted MRI fusion models for characterization of inflammation
+      collaborators:
+        - name: Prof. Mary-Louise Greer
+          website: https://www.sickkids.ca/en/staff/g/mary-louise-greer/
+        - name: Prof. Mojgan Hodaie
+          website: https://www.hodaielab.com/

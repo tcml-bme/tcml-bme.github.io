@@ -1,0 +1,48 @@
+---
+layout: page
+title: Collaborators
+---
+
+<div class="row">
+
+{% for item in site.data.collaborators %}
+<div class="row col-lg-6 mb-4">
+
+    <div class="card h-100 border-0">
+        <a href="{{ item.website }}"><img class="card-img-top" src="{{ site.baseurl}}/assets/logos/{{ item.image }}" alt=""></a>
+        <div class="card-body">
+        <h4 class="card-title">
+            <a href="{{ item.website }}">{{ item.institution }}</a>
+        </h4>
+        <p class="card-text">
+
+            <ul>
+                {% for topic in item.topic %}
+                <li>
+                  
+                    {% for collaborator in topic.collaborators %}
+                        
+                            <a href="{{ collaborator.website }}">{{ collaborator.name }}</a>, 
+                            
+                        
+                    {% endfor %}
+
+                    {{ topic.title }}
+                </li>
+
+                    {% endfor %}
+            </ul>
+
+        </p>
+
+        </div>
+    </div>
+
+
+</div>
+
+{% endfor %}
+  
+
+
+</div>

@@ -1,0 +1,23 @@
+title: Technion Computational MRI Lab
+baseurl: ""
+email: tcml.bme@gmail.com
+description: >- 
+  Description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+carousel-count: 5
+
+collections:
+  banners:
+    output: false
+  abstracts:
+    output: true
+  articles:
+    output: true
+  conferences:
+    output: true
+  keywords:
+    output: true
+
+permalink: /:title:output_ext

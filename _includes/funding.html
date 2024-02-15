@@ -1,0 +1,15 @@
+<div class="row text-center text-lg-start">
+
+{% for fund in site.data.funding %}
+
+    <div class="col-lg-4 col-md-4 col-4 text-center">
+
+        <a href="{{ fund.website }}" class="d-block mb-4 h-100">
+            <img class="img-fluid funding-logos" src="{{ site.baseurl }}/assets/logos/{{ fund.logo }}" alt="{{ fund.name }}">
+        </a>
+    
+    </div>
+
+{% endfor %}
+
+</div>
