@@ -1,0 +1,28 @@
+- name: Moti Freiman
+  title: Principal Investigator
+  photo: Freiman2.jpg
+  links:
+    orcid: https://orcid.org/0000-0003-1083-1548
+    google_scholar: https://scholar.google.com/citations?user=8Oiqdz0AAAAJ&hl=en
+    linkedin: https://www.linkedin.com/in/moti-freiman-1826115    
+
+- name: Chen Yahav
+  title: Lab Manager
+  photo: chen.png
+
+- name: Angeleene Ang
+  title: Software Programmer
+  photo: Ang_pic.jpeg
+  links:
+    orcid: https://orcid.org/0000-0001-8290-1969
+    google_scholar: https://scholar.google.com/citations?user=nXhYvwcAAAAJ&hl=en&oi=ao
+    github: https://github.com/zemmyang
+    linkedin: https://www.linkedin.com/in/zemmyang/
+
+- name: Naama Gavrielov
+  title: Research Assistant
+  photo: naama_gavrielov.jpg
+
+- name: Ester Deich
+  title: Research Assistant
+  photo: ester_deich.png

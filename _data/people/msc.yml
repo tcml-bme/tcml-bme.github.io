@@ -1,0 +1,46 @@
+- name: Adi Apotheker
+  photo: Adi_img.jpg
+
+- name: Yevgenia Shteynman
+  photo: jenia_pic.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
+
+- name: Hadas Ben Atiya
+  photo: hadas_pic.jpeg
+  links:
+    linkedin: https://www.linkedin.com/in/hadas-ben-atya-225629138
+
+- name: Rotem Benisty
+  photo: Rotem.jpg
+
+- name: Eyal Hanania
+  photo: Eyal_imgCenter.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/eyal-h-a96a6823b/
+
+- name: Noga Kertes
+  photo: NogaKertes.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/noga-kertes-49464818b/
+
+- name: Shir Nitzan
+  photo: Shir_img.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/shir-nitzan
+
+- name: Yahel Kleinman
+  photo: Yahel_img.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yahel-kleinman-3a9b68197
+
+- name: Liam Hazan
+  photo: liam_hazan.jpeg
+  links:
+    linkedin: https://www.linkedin.com/in/liam-hazan-a82876190/
+
+- name: Sharon Peled
+  photo: sharon_peled.jpg
+
+- name: Uriel Cohen
+  photo: uriel.jpg

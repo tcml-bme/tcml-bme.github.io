@@ -1,0 +1,169 @@
+---
+layout: page
+title: Publications
+---
+
+{% assign sorted_articles = site.articles | reverse %}
+{% assign sorted_abstracts = site.abstracts | reverse %}
+{% assign sorted_conferences = site.conferences | reverse %}
+
+
+<div class="container mt-5">
+      
+  <ul class="nav nav-tabs mb-5" id="nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="journals-tab" data-bs-toggle="tab" href="#journals" role="tab" aria-controls="journals" aria-selected="true">
+        Journal Articles
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="conferences-tab" data-bs-toggle="tab" href="#conferences" role="tab" aria-controls="conferences" aria-selected="false">
+        Conference Papers (Peer-reviewed)
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="abstracts-tab" data-bs-toggle="tab" href="#abstracts" role="tab" aria-controls="abstracts" aria-selected="false">
+        Conference Abstracts
+      </a>
+  </li>
+</ul>
+
+
+  <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="journals" role="tabpanel" aria-labelledby="journals-tab">
+
+        <h1 class="pub-header">Journal Articles</h1>
+
+        {% assign current_year = "" %}
+
+          {% for article in sorted_articles %}
+          {% assign year = article.date | date: "%Y" %}
+          {% if year <= "2016" %}
+          {% if current_year != "2016 and earlier" %}
+            <h2>2016 and before</h2>
+            {% assign current_year = "2016 and earlier" %}
+          {% endif %}
+        {% else %}
+          {% if year != current_year %}
+            <h2>{{ year }}</h2>
+            {% assign current_year = year %}
+          {% endif %}
+        {% endif %}
+              <div class="journal-item my-4">
+
+              {% for author in article.authors %}
+                {{ author }}, 
+              {% endfor %}
+
+              <a href="https://doi.org/{{ article.DOI }}">
+                <b>{{ article.title }}</b>
+              </a>
+
+              <i>
+                {{ article.journal }},
+              </i>
+
+              {{ article.misc }}.
+
+              {{ article.date | date: "%B %Y" }}
+
+            </div>
+
+          {% endfor %}
+
+        </div>
+      <div class="tab-pane fade" id="conferences" role="tabpanel" aria-labelledby="conferences-tab">
+
+        <h1 class="pub-header">Conference Papers</h1>
+
+        
+        {% assign current_year = "" %}
+
+        {% for article in sorted_abstracts %}
+      
+        {% assign year = article.date | date: "%Y" %}
+        {% if year <= "2016" %}
+        {% if current_year != "2016 and earlier" %}
+          <h2>2016 and before</h2>
+          {% assign current_year = "2016 and earlier" %}
+        {% endif %}
+      {% else %}
+        {% if year != current_year %}
+          <h2>{{ year }}</h2>
+          {% assign current_year = year %}
+        {% endif %}
+      {% endif %}
+      
+        <div class="journal-item my-4">
+      
+          {% for author in article.authors %}
+            {{ author }}, 
+          {% endfor %}
+      
+            <b>{{ article.title }}</b>
+      
+          <i>
+            {{ article.conference }},
+          </i>
+
+          {{ article.location }}
+      
+          {{ article.misc }}.
+      
+          {{ article.conference_dates }}
+      
+        </div>
+      
+      {% endfor %}
+      
+      </div>
+      <div class="tab-pane fade" id="abstracts" role="tabpanel" aria-labelledby="abstracts-tab">
+
+        <h1 class="pub-header">Conference Abstracts</h1>
+
+        {% assign current_year = "" %}
+
+        {% for article in sorted_conferences %}
+        {% assign year = article.date | date: "%Y" %}
+        {% if year <= "2016" %}
+        {% if current_year != "2016 and earlier" %}
+          <h2>2016 and before</h2>
+          {% assign current_year = "2016 and earlier" %}
+        {% endif %}
+      {% else %}
+        {% if year != current_year %}
+          <h2>{{ year }}</h2>
+          {% assign current_year = year %}
+        {% endif %}
+      {% endif %}
+
+        <div class="journal-item my-4">
+      
+          {% for author in article.authors %}
+            {{ author }}, 
+          {% endfor %}
+      
+          <b>{{ article.title }}</b>
+      
+          <i>
+            {{ article.conference }},
+          </i>
+
+          {{ article.location }}
+      
+          {{ article.misc }}.
+      
+          {{ article.conference_dates }}
+      
+        </div>
+      
+      {% endfor %}
+      
+
+
+      </div>
+  </div>
+</div>
+
+
+

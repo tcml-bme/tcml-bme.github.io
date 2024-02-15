@@ -1,0 +1,74 @@
+- name: "Luise Brock"
+  degree: "MSc"
+  position: "PhD Candidate at Institute of Radiology, University Hospital Erlangen"
+  photo: "LuiseImage.jpeg"
+  links: 
+    linkedin: https://www.linkedin.com/in/luise-brock-005324190
+
+- name: "Hadar Hezi"
+  degree: "MSc"
+  position: ""
+  photo: "Hadar_img.jpeg"
+  links:
+    linkedin: https://www.linkedin.com/in/hadar-hezi-2120b344//
+
+- name: "Noam Korngut"
+  degree: "MSc"
+  position: "Audio & Nlp researcher at OriginAI"
+  photo: "Noam_img1.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/noam-korngut-ab344117b/
+
+- name: "Elad Rotman"
+  degree: "MSc"
+  position: "Senior R&D Engineer at Medtronic Global Innovation Center (MAGIC)"
+  photo: "EladRUpdate.jpeg"
+  links:
+    linkedin: https://www.linkedin.com/in/elad-rotman-2b168267/
+
+- name: "Yan Ziselman"
+  degree: "MSc"
+  position: "Algorithm Engineer at Camtek"
+  photo: "Yaniv_pic.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/yan-ziselman-972a72131
+
+- name: "Shira Nemirovsky-Rotman"
+  degree: "PhD"
+  position: "Senior Lecturer at Haifa University"
+  photo: "Shira_Rotman.jpg"
+
+- name: "Itai Guez"
+  degree: "MSc"
+  position: "Machine Learning Researcher - AI in healthcare at IBM"
+  photo: "itai_img.JPG"
+  links:
+    linkedin: https://www.linkedin.com/in/itai-guez-76645545/
+
+- name: "Daniel Shats"
+  degree: "MSc"
+  position: "Deep-learning engineer at IBM research"
+  photo: "DShats.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/daniel-shats-52b592150/
+
+- name: "Maya Levital"
+  degree: "MSc"
+  position: "System Engineering Export at Align"
+  photo: "MayaL_pic.png"
+  links:
+    linkedin: https://www.linkedin.com/in/maya-levital-17876132/
+
+- name: "Lilach Barkat"
+  degree: "MSc"
+  position: ""
+  photo: "Lilach_img1.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/lilach-barkat-9bba42172/
+
+- name: "Yael Zaffrani"
+  degree: "MSc"
+  position: "Computer Vision Algorithm Engineer at Apple"
+  photo: "yael.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/yael-zaffrani/
