@@ -1,6 +1,3 @@
-- name: Samah Khawaled
-  photo: Samah_TA.jpeg
-
 - name: Nitzan Avidan
   photo: Nitzan_img.jpg
 
@@ -9,3 +6,10 @@
   links:
     linkedin: https://www.linkedin.com/in/mayagilad
 
+- name: "Itai Guez"
+  photo: "itai_img.JPG"
+  links:
+    linkedin: https://www.linkedin.com/in/itai-guez-76645545/
+
+- name: Samah Khawaled
+  photo: Samah_TA.jpeg
