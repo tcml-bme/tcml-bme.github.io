@@ -1,18 +1,21 @@
 - name: Adi Apotheker
   photo: adi_img.png
 
-- name: Yevgenia Shteynman
-  photo: jenia_pic.jpg
-  links:
-    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
-
 - name: Hadas Ben Atiya
   photo: hadas_pic.jpeg
   links:
     linkedin: https://www.linkedin.com/in/hadas-ben-atya-225629138
 
+- name: Zvi Badash
+  photo: zvi_badash.jpg
+
 - name: Rotem Benisty
   photo: Rotem.jpg
+
+- name: Yevgenia Shteynman
+  photo: jenia_pic.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
 
 - name: Eyal Hanania
   photo: Eyal_imgCenter.jpg
