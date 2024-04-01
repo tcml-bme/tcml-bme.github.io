@@ -17,3 +17,11 @@ Sample notebook in Google Colab: [![Open sample notebook in Google Colab](https:
 
 PD-DWI is a physiologically-decomposed Diffusion-Weighted MRI machine-learning model for predicting response to neoadjuvant chemotherapy in invasive breast cancer.
 
+##### [IVIM-Morph](https://github.com/TechnionComputationalMRILab/IVIM-Morph)
+
+Self-supervised deep neural network model for motion-corrected quantitative analysis of DWI data using the Intra-voxel Incoherent Motion (IVIM) model.
+
+##### [PCMC-T1](https://github.com/eyalhana/PCMC-T1)
+
+Repository of a physically-constrained deep learning network for motion correction in free-breathing T1 mapping.
+
