@@ -3,6 +3,13 @@
   photo: "Samah_TA.jpeg"
   position: "Bosch Center for Artificial Intelligence"
 
+- name: "Shir Nitzan"
+  degree: "MSc"
+  photo: "Shir_img.jpg"
+  position: "Research Engineer at Adasky"
+  links:
+    linkedin: https://www.linkedin.com/in/shir-nitzan
+
 - name: "Luise Brock"
   degree: "MSc"
   position: "PhD Candidate at Institute of Radiology, University Hospital Erlangen"
