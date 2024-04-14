@@ -28,10 +28,22 @@ const dataNodes = [
         url: baseurl + "/keywords/clinical/fetal-imaging"
     },
     { 
+        id: 25, 
+        title: "Ontological Imaging", 
+        group: 1, 
+        url: baseurl + "/keywords/clinical/ontological-imaging" 
+    },
+    { 
         id: 5, 
         title: "Breast Cancer", 
         group: 1, 
         url: baseurl + "/keywords/clinical/breast-cancer" 
+    },
+    { 
+        id: 26, 
+        title: "Hodgkin's Lymphoma", 
+        group: 1, 
+        url: baseurl + "/keywords/clinical/hodgkins-lymphoma" 
     },
     { 
         id: 6, 
@@ -53,24 +65,24 @@ const dataNodes = [
     },
 
     // imaging
-    { 
-        id: 9, 
-        title: "Qualitative MRI", 
-        group: 2, 
-        url: baseurl + "/keywords/imaging/qualitative-mri" 
-    },
+    // { 
+    //     id: 9, 
+    //     title: "Qualitative MRI", 
+    //     group: 2, 
+    //     url: baseurl + "/keywords/imaging/qualitative-mri" 
+    // },
     { 
         id: 10, 
         title: "Radiological Reports", 
         group: 2, 
         url: baseurl + "/keywords/imaging/radiological-reports"  
     },
-    { 
-        id: 11, 
-        title: "T1/T2 Mapping", 
-        group: 2, 
-        url: baseurl + "/keywords/imaging/t1-t2-mapping"  
-    },
+    // { 
+    //     id: 11, 
+    //     title: "T1/T2 Mapping", 
+    //     group: 2, 
+    //     url: baseurl + "/keywords/imaging/t1-t2-mapping"  
+    // },
     { 
         id: 12, 
         title: "DWI", 
@@ -94,6 +106,24 @@ const dataNodes = [
         title: "MRI", 
         group: 2, 
         url: baseurl + "/keywords/imaging/mri" 
+    },
+    { 
+        id: 27, 
+        title: "Quantitative MRI", 
+        group: 2, 
+        url: baseurl + "/keywords/imaging/quantitative-mri" 
+    },
+    { 
+        id: 28, 
+        title: "T1 Mapping", 
+        group: 2, 
+        url: baseurl + "/keywords/imaging/t1-mapping" 
+    },
+    { 
+        id: 29, 
+        title: "T2 Mapping", 
+        group: 2, 
+        url: baseurl + "/keywords/imaging/t2-mapping" 
     },
     { 
         id: 16, 
@@ -163,16 +193,21 @@ const dataLinksCategories = [
     { source: 1, target: 6 },
     { source: 1, target: 7 },
     { source: 1, target: 8 },
+    { source: 1, target: 25 },
+    { source: 1, target: 26 },
 
-    { source: 2, target: 9 },
+    // { source: 2, target: 9 },
     { source: 2, target: 10 },
-    { source: 2, target: 11 },
+    // { source: 2, target: 11 },
     { source: 2, target: 12 },
     { source: 2, target: 13 },
     { source: 2, target: 14 },
     { source: 2, target: 15 },
     { source: 2, target: 16 },
     { source: 2, target: 17 },
+    { source: 2, target: 27 },
+    { source: 2, target: 28 },
+    { source: 2, target: 29 },
 
     { source: 3, target: 18 },
     { source: 3, target: 19 },
