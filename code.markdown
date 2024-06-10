@@ -25,3 +25,6 @@ Self-supervised deep neural network model for motion-corrected quantitative anal
 
 Repository of a physically-constrained deep learning network for motion correction in free-breathing T1 mapping.
 
+##### [AxCorSRMRI](https://github.com/TechnionComputationalMRILab/AxCorSRMRI)
+
+Self-Supervised Realistic Through-Plane MRI Super Resolution from Clinical 2D Axial and Coronal Acquisition.
