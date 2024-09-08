@@ -1,23 +1,18 @@
-- name: Hadas Ben Atiya
-  photo: hadas_pic.jpeg
-  links:
-    linkedin: https://www.linkedin.com/in/hadas-ben-atya-225629138
-
 - name: Zvi Badash
   photo: zvi_badash.jpg
 
 - name: Rotem Benisty
   photo: Rotem.jpg
 
-- name: Yevgenia Shteynman
-  photo: jenia_pic.jpg
-  links:
-    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
-
 - name: Eyal Hanania
   photo: Eyal_imgCenter.jpg
   links:
     linkedin: https://www.linkedin.com/in/eyal-h-a96a6823b/
+
+- name: Liam Hazan
+  photo: liam_hazan.jpeg
+  links:
+    linkedin: https://www.linkedin.com/in/liam-hazan-a82876190/
 
 - name: Noga Kertes
   photo: NogaKertes.jpg
@@ -29,10 +24,14 @@
   links:
     linkedin: https://www.linkedin.com/in/yahel-kleinman-3a9b68197
 
-- name: Liam Hazan
-  photo: liam_hazan.jpeg
-  links:
-    linkedin: https://www.linkedin.com/in/liam-hazan-a82876190/
+- name: Adi Zehavi Lenz
+  photo: adi_zehavi_lenz.jpg
 
 - name: Sharon Peled
   photo: sharon_peled.jpg
+  
+- name: Yevgenia Shteynman
+  photo: jenia_pic.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
+
