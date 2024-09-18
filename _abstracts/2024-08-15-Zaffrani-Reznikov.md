@@ -1,5 +1,5 @@
 ---
-title: "Qdwi-morph: motion-compensated quantitative diffusion-weighted mri analysis for fetal lung maturity assessment"
+title: "Qdwi-morph: Motion-compensated Quantitative Diffusion-weighted Mri Analysis For Fetal Lung Maturity Assessment"
 date: 2024-08-15
 conference_dates: June 03 - 08, 2023
 conference: 2023 ISMRM & ISMRT Annual Meeting

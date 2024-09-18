@@ -1,5 +1,5 @@
 ---
-title: "Miniature robot-based precise targeting system for keyhole neurosurgery: concept and preliminary results"
+title: "Miniature Robot-based Precise Targeting System For Keyhole Neurosurgery: Concept And Preliminary Results"
 date: 2005-05-01
 authors: ['L Joskowicz', 'M Shoham', 'R Shamir', 'M Freiman', 'E Zehavi', 'Y Shoshan']
 DOI: 10.1016/j.ics.2005.03.343

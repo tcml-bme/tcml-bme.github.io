@@ -1,5 +1,5 @@
 ---
-title: "Evaluation framework for carotid bifurcation lumen segmentation and stenosis grading"
+title: "Evaluation Framework For Carotid Bifurcation Lumen Segmentation And Stenosis Grading"
 date: 2011-08-01
 authors: ['K Hameeteman', 'M Zuluaga', 'M Freiman', 'L Joskowicz', 'O Cuisenaire', 'LF Valencia', 'M Glsn', 'K Krissian', 'J Mille', 'W Wong', 'M Orkisz', 'H Tek', 'MH Hoyos', 'F Benmansour', 'A Chung', 'S Rozie', 'M van Gils', 'L van den Borne', 'J Sosna', 'P Berman', 'N Cohen', 'P Douek', 'I Snchez', 'M Aissat', 'M Schaap', 'C Metz', 'G Krestin', 'A van der Lugt', 'W Niessen', 'T van Walsum']
 DOI: 10.1016/j.media.2011.02.004

@@ -1,5 +1,5 @@
 ---
-title: "Carotid lumen segmentation and stenosis grading challenge"
+title: "Carotid Lumen Segmentation And Stenosis Grading Challenge"
 date: 2010-03-22
 authors: ['K Hameeteman', 'M Freiman', 'MA Zuluaga', 'L Joskowicz', 'S Rozie', 'MJ Van Gils', 'L Van den Borne', 'J Sosna', 'P Berman', 'N Cohen', 'P Douek', 'I Sanchez', 'M Aissat', 'A Van der Lugt', 'GP Krestin', 'WJ Niessen', 'T Van Walsum']
 DOI: 10.54294/fl5463

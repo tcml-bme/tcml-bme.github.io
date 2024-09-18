@@ -1,5 +1,5 @@
 ---
-title: "Image-guided system with miniature robot for precise positioning and targeting in keyhole neurosurgery"
+title: "Image-guided System With Miniature Robot For Precise Positioning And Targeting In Keyhole Neurosurgery"
 date: 2006-07-01
 authors: ['L Joskowicz', 'R Shamir', 'M Freiman', 'M Shoham', 'E Zehavi', 'F Umansky', 'Y Shoshan']
 DOI: 10.1080/10929080600909351
