@@ -21,6 +21,13 @@
   links: 
     linkedin: https://www.linkedin.com/in/luise-brock-005324190
 
+- name: "Liam Hazan"
+  degree: "MSc"
+  position: "AI for Healthcare Researcher at IBM"
+  photo: "liam_hazan.jpeg"
+  links:
+    linkedin: https://www.linkedin.com/in/liam-hazan-a82876190/
+
 - name: "Hadar Hezi"
   degree: "MSc"
   position: ""
