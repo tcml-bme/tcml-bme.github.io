@@ -1,18 +1,14 @@
-- name: Adi Apotheker
+
+- name: "Adi Apotheker"
   degree: "MSc"
   photo: adi_img.png
 
-- name: "Samah Khawaled"
-  degree: "PhD"
-  photo: "Samah_TA.jpeg"
-  position: "Bosch Center for Artificial Intelligence"
-
-- name: "Shir Nitzan"
+- name: "Lilach Barkat"
   degree: "MSc"
-  photo: "Shir_img.jpg"
-  position: "Research Engineer at Adasky"
+  position: ""
+  photo: "Lilach_img1.jpg"
   links:
-    linkedin: https://www.linkedin.com/in/shir-nitzan
+    linkedin: https://www.linkedin.com/in/lilach-barkat-9bba42172/
 
 - name: "Luise Brock"
   degree: "MSc"
@@ -20,6 +16,12 @@
   photo: "LuiseImage.jpeg"
   links: 
     linkedin: https://www.linkedin.com/in/luise-brock-005324190
+
+- name: "Itai Guez"
+  degree: "MSc"
+  photo: "itai_img.JPG"
+  links:
+    linkedin: https://www.linkedin.com/in/itai-guez-76645545/
 
 - name: "Liam Hazan"
   degree: "MSc"
@@ -42,31 +44,10 @@
   links:
     linkedin: https://www.linkedin.com/in/noam-korngut-ab344117b/
 
-- name: "Elad Rotman"
-  degree: "MSc"
-  position: "Senior R&D Engineer at Medtronic Global Innovation Center (MAGIC)"
-  photo: "EladRUpdate.jpeg"
-  links:
-    linkedin: https://www.linkedin.com/in/elad-rotman-2b168267/
-
-- name: "Yan Ziselman"
-  degree: "MSc"
-  position: "Algorithm Engineer at Camtek"
-  photo: "Yaniv_pic.jpg"
-  links:
-    linkedin: https://www.linkedin.com/in/yan-ziselman-972a72131
-
-- name: "Shira Nemirovsky-Rotman"
+- name: "Samah Khawaled"
   degree: "PhD"
-  position: "Senior Lecturer at Haifa University"
-  photo: "Shira_Rotman.jpg"
-
-- name: "Daniel Shats"
-  degree: "MSc"
-  position: "Deep-learning engineer at IBM research"
-  photo: "DShats.jpg"
-  links:
-    linkedin: https://www.linkedin.com/in/daniel-shats-52b592150/
+  photo: "Samah_TA.jpeg"
+  position: "Bosch Center for Artificial Intelligence"
 
 - name: "Maya Levital"
   degree: "MSc"
@@ -75,12 +56,37 @@
   links:
     linkedin: https://www.linkedin.com/in/maya-levital-17876132/
 
-- name: "Lilach Barkat"
+- name: "Shira Nemirovsky-Rotman"
+  degree: "PhD"
+  position: "Senior Lecturer at Haifa University"
+  photo: "Shira_Rotman.jpg"
+
+- name: "Shir Nitzan"
   degree: "MSc"
-  position: ""
-  photo: "Lilach_img1.jpg"
+  photo: "Shir_img.jpg"
+  position: "Research Engineer at Adasky"
   links:
-    linkedin: https://www.linkedin.com/in/lilach-barkat-9bba42172/
+    linkedin: https://www.linkedin.com/in/shir-nitzan
+
+- name: "Elad Rotman"
+  degree: "MSc"
+  position: "Senior R&D Engineer at Medtronic Global Innovation Center (MAGIC)"
+  photo: "EladRUpdate.jpeg"
+  links:
+    linkedin: https://www.linkedin.com/in/elad-rotman-2b168267/
+
+- name: "Daniel Shats"
+  degree: "MSc"
+  position: "Deep-learning engineer at IBM research"
+  photo: "DShats.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/daniel-shats-52b592150/
+
+- name: "Yevgenia Shteynman"
+  degree: "MSc"
+  photo: jenia_pic.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yevgenia-shteynman/
 
 - name: "Yael Zaffrani"
   degree: "MSc"
@@ -88,3 +94,11 @@
   photo: "yael.jpg"
   links:
     linkedin: https://www.linkedin.com/in/yael-zaffrani/
+
+- name: "Yan Ziselman"
+  degree: "MSc"
+  position: "Algorithm Engineer at Camtek"
+  photo: "Yaniv_pic.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/yan-ziselman-972a72131
+
