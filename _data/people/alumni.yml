@@ -1,11 +1,14 @@
 
 - name: "Adi Apotheker"
   degree: "MSc"
+  position: "Senior Deep Learning and Algorithm Engineer at Fetcherr"
   photo: adi_img.png
+  links:
+    linkedin: https://www.linkedin.com/in/adi-apotheker-tovi/
 
 - name: "Lilach Barkat"
   degree: "MSc"
-  position: ""
+  position: "Machine Learning Researcher at Q"
   photo: "Lilach_img1.jpg"
   links:
     linkedin: https://www.linkedin.com/in/lilach-barkat-9bba42172/
@@ -19,6 +22,7 @@
 
 - name: "Itai Guez"
   degree: "MSc"
+  position: "Machine learning researcher and develeoper at IBM"
   photo: "itai_img.JPG"
   links:
     linkedin: https://www.linkedin.com/in/itai-guez-76645545/
