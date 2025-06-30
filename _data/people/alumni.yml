@@ -13,6 +13,13 @@
   links:
     linkedin: https://www.linkedin.com/in/lilach-barkat-9bba42172/
 
+- name: "Rotem Benisty"
+  degree: "MSc"
+  position: "Chip Design Engineer at Nvidia"
+  photo: "Rotem.jpg"
+  links:
+    linkedin: https://www.linkedin.com/in/rotem-benisty-b49859202
+
 - name: "Luise Brock"
   degree: "MSc"
   position: "PhD Candidate at Institute of Radiology, University Hospital Erlangen"
