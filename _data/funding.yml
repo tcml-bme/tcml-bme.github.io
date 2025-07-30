@@ -25,3 +25,6 @@
 - name: "Technion - Israel Institute of Technology"
   website: "https://www.technion.ac.il/en/home-2/"
   logo: "technion/TechnionIIT English 2-lines.png"
+- name: "Zimin Institutes"
+  website: "https://zimininstitutes.org/"
+  logo: "zimin_institutes.png"
