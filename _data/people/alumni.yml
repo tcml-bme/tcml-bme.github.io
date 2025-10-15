@@ -6,6 +6,9 @@
   links:
     linkedin: https://www.linkedin.com/in/adi-apotheker-tovi/
 
+- name: Zvi Badash
+  photo: zvi_badash.jpg
+
 - name: "Lilach Barkat"
   degree: "MSc"
   position: "Machine Learning Researcher at Q"
@@ -72,6 +75,9 @@
   photo: "MayaL_pic.png"
   links:
     linkedin: https://www.linkedin.com/in/maya-levital-17876132/
+
+- name: Sharon Peled
+  photo: sharon_peled.jpg
 
 - name: "Shira Nemirovsky-Rotman"
   degree: "PhD"
