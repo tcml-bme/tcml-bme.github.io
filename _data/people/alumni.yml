@@ -58,6 +58,11 @@
   links:
     linkedin: https://www.linkedin.com/in/hadar-hezi-2120b344//
 
+- name: Yahel Kleinman
+  photo: Yahel_img.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yahel-kleinman-3a9b68197
+
 - name: "Noam Korngut"
   degree: "MSc"
   position: "Audio & Nlp researcher at OriginAI"
