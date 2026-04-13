@@ -93,6 +93,7 @@ class ConferenceAbstract:
         content = f"""
 ---
 title: "{self.title}"
+authors: [{self.authors}]
 date: {jekyll_date}
 conference_dates: {conference_dates}
 conference: {self.event_name}

@@ -1,160 +1,148 @@
-# %%
-from selenium import webdriver
-from bs4 import BeautifulSoup
-import time
+from habanero import Crossref
 
-# %%
+from lab_keywords import *
+from soup import *
+from keyword_matcher import *
+from data import *
+from website import *
+from tqdm import tqdm
+import re
 
-MOTI_SCHOLAR_URL = 'https://scholar.google.com/citations?hl=en&user=8Oiqdz0AAAAJ&view_op=list_works&sortby=pubdate'
+main_soup = get_soup(MOTI_SCHOLAR_URL, click_more=True)
+cr = Crossref()
 
-def get_soup(url):
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    driver = webdriver.Chrome(options=options)
+pub_data = get_pubdata_from_scholar(main_soup)
 
-    driver.get(url)
-    time.sleep(5)
-    html = driver.page_source
-    driver.quit()
-    soup = BeautifulSoup(html, 'html.parser')
-    return soup
+detailed_pub_data = get_detailed_pubdata(pub_data)
 
-main_soup = get_soup(MOTI_SCHOLAR_URL)
-# Extract data
-pub_data = []
-for publication in main_soup.find_all('tr', class_='gsc_a_tr'):
-    title = publication.find('a', class_='gsc_a_at').text
-    
-    link = publication.find('a', class_='gsc_a_at')
-    link_text = link['href']
-    full_link = f"https://scholar.google.com{link_text}&hl=en"
-
-    gray_text = publication.find_all('div', class_='gs_gray')
-
-    authors, journal = gray_text
-    
-    pub_data.append({
-        'Title': title,
-        'Link': full_link,
-        'Authors': authors.text,
-        'Journal': journal.text
-    })
-
-# %%
-
-detailed_pub_data = []
-for item in pub_data:
-    link = item['Link']
-    pub_soup = get_soup(link)
-    
-    for info in pub_soup.find_all('div', id='gsc_oci_table'):
-        field = info.find_all('div', class_='gsc_oci_field')
-        value = info.find_all('div', class_='gsc_oci_value')
-
-        data = {
-                'Title': item['Title'].strip("\u200f"),
-                'Authors': item['Authors'],
-                'Journal': item['Journal'].strip("\u200f"),
-            }
-        additional = {f.text: v.text for f, v in zip(field, value)}
-        additional.pop("Total citations", None)
-        additional.pop("Scholar articles", None)
-
-        try:
-            additional["Publication date"] = additional["Publication date"].replace("/", "-")
-            
-            year = additional["Publication date"].split("-")[0]
-            
-            if year < 2022:
-                break
-        except:
-            pass
-            
-        detailed_pub_data.append(data | additional)
-        
-# %%
-
-len(detailed_pub_data)
-
-# %%
-
-conference = []
 preprint = []
-journal = []
+crossref_items = []
 
-for item in detailed_pub_data:
-    if "Conference" in item.keys():
-        conference.append(item)
-        continue
-    
+for item in tqdm(detailed_pub_data):
     if "arxiv" in item['Journal'].lower():
         preprint.append(item)
         continue
     
-    journal.append(item)
-    
-# %%
+    crossref_items.append(item)
 
-len(conference), len(preprint), len(journal)
+low_similarity = []
+items = {}
 
-# %%
+for data in crossref_items:
+    x = cr.works(query=data['Title'] + data["Authors"], rows=10)
+    crossref_out = x['message']['items'][0]['title'][0]
+    title = data["Title"]
+    doi = x['message']['items'][0]['DOI']
+    pub_type = x['message']['items'][0]['type']
+    container_title = x['message']['items'][0]['container-title'][0]
+    description = data.get("Description", "")
 
-from keyword_matcher import extract_keywords
-
-DEST_ARTICLES = r"C:\Users\ang.a\Documents\GitHub\tcml-bme.github.io\_articles"
-DEST_CONFERENCES = r"C:\Users\ang.a\Documents\GitHub\tcml-bme.github.io\_conferences"
-
-def transform_author(author):
-    author = author.strip()
-    last_name = author.split(" ")[-1]
-    
-    # get the initials of the first names
-    initials = "".join([name[0] for name in author.split(" ")[:-1]])
-    
-    return f"'{initials} {last_name}'"
-
-def create_article_file(item):
-    title = item['Title']
-    abstract = item['Description']
-    authors = item['Authors']
-    parsed_authors = ", ".join([transform_author(author) for author in authors.split(",")])
-    journal = item['Journal']
     try:
-        # pad date with zeroes when applicable
-        date = item['Publication date']
-        date = "-".join([f"{int(part):02d}" for part in date.split("-")])
-        
-    except:
-        date = "N/A"
-    
-    keywords = extract_keywords(title + "\n" + abstract)
+        published = date_parts_to_datetime(x['message']['items'][0]['published']['date-parts'][0])
+    except KeyError:
+        published = date_parts_to_datetime(x['message']['items'][0]['indexed']['date-parts'][0])
 
-    # transform keywords to a bulleted list
-    keywords = "\n".join([f"  - {keyword.title()}" for keyword in keywords])
-            
-    content = f"""
----
-title: "{title}"
-date: {date}
-authors: [{parsed_authors}]
-journal: "{journal}"
-categories: 
-{keywords}
----
-    """      
-    
-    # remove first newline in content
-    content = content[1:]
-    
-    first_author = transform_author(authors.split(",")[0]).replace("'", "")
-    first_author = first_author.split(" ")[1]
-    file_title = f"{date}-{first_author}.md"
-    
-    return content, file_title
+    try:
+        authors = x['message']['items'][0]['author']
+        is_moti_paper = any([author['family'] == "Freiman" for author in authors])
+        if not is_moti_paper:
+            print("Not Moti paper: ", authors)
+            continue
 
-file, file_title = create_article_file(journal[1])
+        author_list = transform_crossref_authors(authors)
+    except KeyError:
+        authors = data["Authors"]
+        print("warning: crossref author data not found")
+
+        author_list = ", ".join([transform_author(author) for author in authors.split(",")])
+
+    print(title)
+    crossref_title = re.sub('<[^<]+?>', '', crossref_out)
+    print(crossref_title)
+
+    similarity_score = compare_titles(title, crossref_out, lemmatize=True, remove_stopwords=False)
+
+    enum_type = PublicationType(pub_type)
+
+    match enum_type:
+        case PublicationType.JOURNAL_ARTICLE:
+            data = JournalArticle(
+                title=" ".join([t.capitalize() for t in crossref_title.split(" ")]),
+                DOI=doi,
+                authors=author_list,
+                publication_date=published,
+                journal=container_title,
+                description=x['message']['items'][0].get("abstract", description)
+            )
+
+        case PublicationType.CONFERENCE_PAPER:
+            try:
+                event_start = date_parts_to_datetime(x['message']['items'][0]['event']['start']['date-parts'][0])
+                event_end = date_parts_to_datetime(x['message']['items'][0]['event']['end']['date-parts'][0])
+            except KeyError:
+                event_start = None
+                event_end = None
+
+            data = ConferenceAbstract(
+                title=" ".join([t.capitalize() for t in crossref_title.split(" ")]),
+                authors=author_list,
+                publication_date=published,
+                conference=container_title,
+                description=x['message']['items'][0].get("abstract", description),
+                event_name=x['message']['items'][0]['event']['name'],
+                event_location=x['message']['items'][0]['event'].get("location", ""),
+                event_start=event_start,
+                event_end=event_end,
+                DOI=doi
+            )
+        case PublicationType.BOOK:
+            published = date_parts_to_datetime(x['message']['items'][0]['published-print']['date-parts'][0])
+
+            data = Book(
+                title=" ".join([t.capitalize() for t in crossref_title.split(" ")]),
+                authors=author_list,
+                publication_date=published,
+                container_title=container_title,
+                subtitle=x['message']['items'][0].get("subtitle", ""),
+                DOI=doi
+            )
+
+        case PublicationType.BOOK_CHAPTER:
+            published = date_parts_to_datetime(x['message']['items'][0]['published-print']['date-parts'][0])
+
+            data = ConferencePaper(
+                title=" ".join([t.capitalize() for t in crossref_title.split(" ")]),
+                authors=author_list,
+                publication_date=published,
+                journal=container_title,
+                description=x['message']['items'][0].get("abstract", description),
+                DOI=doi,
+                subtitle=x['message']['items'][0].get("subtitle", ""),
+            )
+        case _:
+            breakpoint()
+
+    if similarity_score < 0.7:
+        print("Warning: low similarity score, skipping")
+        print(similarity_score)
+        low_similarity.append(data)
+    else:
+        print("Similarity score: ", similarity_score)
+        items[doi] = data
+
+    print("\n\n")
 
 import os
-with open(os.path.join(DEST_ARTICLES, file_title), "w") as f:
-    f.write(file)
-    
+os.mkdir("_abstracts/")
+os.mkdir("_articles/")
+os.mkdir("_conferences/")
+
+for doi, data in items.items():
+    if type(data) is ConferenceAbstract:
+        data.to_file("_abstracts/")
+    # elif type(data) is JournalArticle:
+    #     data.to_file("_articles/")
+    # elif type(data) is ConferencePaper:
+    #     data.to_file("_conferences/")
+
+breakpoint()
