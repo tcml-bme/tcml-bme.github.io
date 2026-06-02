@@ -40,6 +40,7 @@
 
 - name: Adi Hatav
   degree: "MSc"
+  position: Data Scientist at Rambam
   photo: adi.hatav.jpeg
 
 - name: "Liam Hazan"
@@ -64,6 +65,7 @@
 
 - name: Yahel Kleinman
   photo: Yahel_img.jpg
+  position: FPGA Design Engineer at Elbit Systems
   links:
     linkedin: https://www.linkedin.com/in/yahel-kleinman-3a9b68197
 
@@ -77,7 +79,7 @@
 - name: "Samah Khawaled"
   degree: "PhD"
   photo: "Samah_TA.jpeg"
-  position: "Bosch Center for Artificial Intelligence"
+  position: "Postdoctoral Researcher, Department of Radiology at Weill Cornell Medicine and Cornell Tech"
 
 - name: "Maya Levital"
   degree: "MSc"
