@@ -31,6 +31,12 @@
   links: 
     linkedin: https://www.linkedin.com/in/luise-brock-005324190
 
+- name: Maya Gilad
+  degree: "PhD"
+  photo: MayaG_img.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/mayagilad
+
 - name: "Itai Guez"
   degree: "MSc"
   position: "Machine learning researcher and develeoper at IBM"
